@@ -1,11 +1,8 @@
 #! /usr/bin/env python3
-
 # Author Gaurav Sablok
 # Universitat Potsdam
 # Date 2024-6-12
-
 # A streamlit application for the ids to ontology association for making the graphviz layout.
-
 import streamlit as st
 import pandas as pd
 #import wget as wg
