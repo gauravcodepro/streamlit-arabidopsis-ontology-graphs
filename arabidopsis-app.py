@@ -6,7 +6,6 @@
 import streamlit as st
 import pandas as pd
 #import wget as wg
-
 st.set_page_config(
                  page_title="Universitat Potsdam Slurm Configurator",
                  page_icon="Universitat Potsdam",
