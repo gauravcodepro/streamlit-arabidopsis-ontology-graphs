@@ -6,11 +6,6 @@
 # A streamlit application for the ids to ontology association for making the graphviz layout.
 import streamlit as st
 import pandas as pd
-#import wget as wg
-=======
-# A streamlit application for the ids to ontology association for making the graphviz layout.
-import streamlit as st
-import pandas as pd
 st.set_page_config(
                  page_title="Graph Ontology",
                  page_icon="Universitat Potsdam",
