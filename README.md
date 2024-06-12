@@ -3,7 +3,7 @@
 - analyzes all the plant ontologies.
 - analyzes also the association of the plant ontologies with the plant obo terms.
 - analyzes also the name suggestions.
-- analyzes also the graph making. 
+- analyzes also the names for the ontologies. 
 ```
 conda install streamlit
 git clone https://github.com/gauravcodepro/streamlit-arabidopsis-interact-graphviz.git
