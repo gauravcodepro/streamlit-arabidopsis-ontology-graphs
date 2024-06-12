@@ -1,2 +1,8 @@
-# streamlit-arabidopsis-ineract-graphviz
-a streamlit application to interact with arabidopsis plant obo for graphviz and other functions
+# a streamlit application for interacting with the arabidopsis plantobo
+```
+conda install streamlit 
+streamlit run arabidopsis-app.py
+```
+
+
+
