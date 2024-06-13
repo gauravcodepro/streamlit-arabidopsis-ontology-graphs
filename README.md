@@ -25,11 +25,6 @@ streamlit run arabidopsis-app.py
 - if arabidopsis ID then it will give the functions.
 ![](https://github.com/gauravcodepro/streamlit-arabidopsis-interact-graphviz/blob/main/view4.png)
 
-<iframe
-  src="https://arabidopsis.streamlit.app/?embed=true"
-  style="height: 450px; width: 100%;"
-></iframe>
-  
 Gaurav \
 Academic Staff Member \
 Bioinformatics \
