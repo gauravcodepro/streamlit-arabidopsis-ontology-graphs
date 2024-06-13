@@ -3,7 +3,8 @@
 - analyzes all the plant ontologies.
 - analyzes also the association of the plant ontologies with the plant obo terms.
 - analyzes also the name suggestions.
-- analyzes also the names for the ontologies. 
+- analyzes also the names for the ontologies.
+- provide the file path to the po_anatomy_gene_arabidopsis_tair.assoc and po.obo and to.obo for analysis
 ```
 conda install streamlit
 git clone https://github.com/gauravcodepro/streamlit-arabidopsis-interact-graphviz.git
@@ -24,9 +25,10 @@ streamlit run arabidopsis-app.py
 - if arabidopsis ID then it will give the functions.
 ![](https://github.com/gauravcodepro/streamlit-arabidopsis-interact-graphviz/blob/main/view4.png)
 
-- sample files included in the git repository. 
-- provide the file path to the po_anatomy_gene_arabidopsis_tair.assoc for the offline analysis
-- plant po.obo can also be provided. 
+<iframe
+  src="https://arabidopsis.streamlit.app/?embed=true"
+  style="height: 450px; width: 100%;"
+></iframe>
   
 Gaurav \
 Academic Staff Member \
