@@ -14,6 +14,13 @@ st.set_page_config(
 st.image("https://www.uni-potsdam.de/typo3conf/ext/up_template/Resources/Public/Images/logos/up_logo_international_2.png", width = 100)
 st.header("A streamlit application for extracting the ontologies for graphs")
 st.subheader("Developed by Gaurav Sablok, Academic Staff Member, Bioinformatics, Universitat Potsdam, Germany")
+help = st.button("Display the help file")
+if help:
+    st.write("if association file has been provided then you can search for the ontologies button")
+    st.write("if plant obo file has been provided then you can search for the plantobo term")
+    st.write("if plant obo term then you can search for the search for the define ontology")
+    st.write("association file is provided only with the Arabidopsis AGI then you can search the fetch associations, ontolgies")
+    st.write("if the association file and the plant ontology file along with the Arabidopsis AGI and the Plant Obo term has provied then you can search for the fetch association, ontolgies, plantobo, defineontology")
 storingfile = st.text_input("Please provide the association file:")
 storingobo = st.text_input("Please provide the obo file")
 storingids = st.text_input("please enter the arabidopsis ID:")
@@ -98,7 +105,7 @@ if storingtext and st.button("ontology"):
         if ontology[i] == storingtext:
             st.write(f"{ontology[i]}\n{revisedfunctions[i]}")
 
-if termobo and st.button("define ontology"):
+if termobo and st.button("defineontology"):
     jsonidvalue = {}
     with open(storingobo, "r") as openobo:
         readobo = openobo.readlines()
