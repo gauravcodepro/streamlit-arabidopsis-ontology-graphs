@@ -1,4 +1,4 @@
-### a streamlit application for interacting with the arabidopsis plantobo
+### a streamlit application for interacting with the arabidopsis ontolgoies
 
 - analyzes all the plant ontologies.
 - analyzes also the association of the plant ontologies with the plant obo terms.
@@ -14,7 +14,10 @@ streamlit run arabidopsis-app.py
 - Following the prompt resources for this application.
   
 - if arabidopsis ID, then it will prompt you to choose what you want
-![](https://github.com/gauravcodepro/streamlit-arabidopsis-interact-graphviz/blob/main/view1.png)
+  <img src = "https://github.com/gauravcodepro/streamlit-arabidopsis-interact-graphviz/blob/main/sample_views/view1.png"; alt="image"; height=200; width = 200;>
+
+  
+![](https://github.com/gauravcodepro/streamlit-arabidopsis-interact-graphviz/blob/main/sample_views/view1.png)
 
 - if plant obo then it will give the functions.
 ![](https://github.com/gauravcodepro/streamlit-arabidopsis-interact-graphviz/blob/main/view2.png)
