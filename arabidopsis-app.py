@@ -6,6 +6,7 @@
 # A streamlit application for the ids to ontology association for making the graphviz layout.
 import streamlit as st
 import pandas as pd
+import streamlit.components.v1 as components
 st.set_page_config(
                  page_title="Graph Ontology",
                  page_icon="Universitat Potsdam",
@@ -15,13 +16,20 @@ st.image("https://www.uni-potsdam.de/typo3conf/ext/up_template/Resources/Public/
 st.header("A streamlit application for extracting the ontologies for graphs")
 st.subheader("Developed by Gaurav Sablok, Academic Staff Member, Bioinformatics, Universitat Potsdam, Germany")
 
+components.iframe("https://www.arabidopsis.org/", height=100)
+
 help = st.button("Display the help file")
 if help:
-    st.write("if association file has been provided then you can search for the ontologies button")
-    st.write("if plant obo file has been provided then you can search for the plantobo term")
-    st.write("if plant obo term then you can search for the search for the define ontology")
-    st.write("association file is provided only with the Arabidopsis AGI then you can search the fetch associations, ontolgies")
-    st.write("if the association file and the plant ontology file along with the Arabidopsis AGI and the Plant Obo term has provied then you can search for the fetch association, ontolgies, plantobo, defineontology")
+    st.write("1. if association file has been provided then you can search using the ontologies button")
+    st.write("2. if plant obo file has been provided then you can search using the plantobo term")
+    st.write("3. if plant obo term and plant obo file then you can search for the define ontology")
+    st.write("4. if association file is provided only with the Arabidopsis AGI then you can search the fetch associations, ontolgies")
+    st.write("5. if the association file and the plant ontology file along with the Arabidopsis AGI and the Plant obo term has provied then you can search for the fetch association, ontolgies, plantobo, defineontology")
+
+toggle = st.button("Display the link to the page where i can download the ontologies")
+if toggle:
+    components.iframe("https://www.arabidopsis.org/download/list?dir=GO_and_PO_Annotations", height=100)
+    st.write("You can download the files from https://www.arabidopsis.org/download/list?dir=GO_and_PO_Annotations")
 
 storingfile = st.text_input("Please provide the association file:")
 storingobo = st.text_input("Please provide the obo file")
