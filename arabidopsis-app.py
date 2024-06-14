@@ -105,14 +105,15 @@ if storingtext and st.button("ontology"):
         if ontology[i] == storingtext:
             st.write(f"{ontology[i]}\n{revisedfunctions[i]}")
 
-if termobo and st.button("defineontology"):
+if storingobo and termobo and st.button("defineontology"):
     jsonidvalue = {}
     with open(storingobo, "r") as openobo:
         readobo = openobo.readlines()
         for i in range(len(readobo)):
             for j in range(len(readobo)):
                 if readobo[i].startswith("id:"):
-                    if readobo[j].startswith("def:"):jsonidvalue[readobo[i].strip().split()[1]] = ' '.join(readobo[j].strip().split()[1:])
+                    if readobo[j].startswith("def:"):
+                        jsonidvalue[readobo[i].strip().split()[1]] = ' '.join(readobo[j].strip().split()[1:])
     selected = dict([(k,v) for k,v in jsonidvalue.items() if k == termobo])
     for k,v in selected.items():
         st.write(f"{k}\n{v}")
