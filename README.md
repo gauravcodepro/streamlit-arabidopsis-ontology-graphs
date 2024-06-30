@@ -7,8 +7,8 @@
 - provide the file path to the po_anatomy_gene_arabidopsis_tair.assoc and po.obo and to.obo for analysis
 ```
 conda install streamlit
-git clone https://github.com/gauravcodepro/streamlit-arabidopsis-interact-graphviz.git
-cd streamlit-arabidopsis-interact-graphviz
+git clone https://github.com/gauravcodepro/streamlit-arabidopsis-ontology-graphs.git
+cd streamlit-arabidopsis-ontology-graphs
 streamlit run arabidopsis-app.py
 ```
 - Following the prompt resources for this application.
