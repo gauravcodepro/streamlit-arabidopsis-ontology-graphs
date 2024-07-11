@@ -1,6 +1,5 @@
 #! /usr/bin/env python3
 # Author Gaurav Sablok
-# Universitat Potsdam
 # Date 2024-6-12
 # coded this complete application in 15 minutes as have to go. 
 # A streamlit application for the ids to ontology association for making the graphviz layout.
@@ -9,12 +8,10 @@ import pandas as pd
 import streamlit.components.v1 as components
 st.set_page_config(
                  page_title="Graph Ontology",
-                 page_icon="Universitat Potsdam",
                  layout="centered",
                  initial_sidebar_state="expanded")
-st.image("https://www.uni-potsdam.de/typo3conf/ext/up_template/Resources/Public/Images/logos/up_logo_international_2.png", width = 100)
 st.header("A streamlit application for extracting the ontologies for graphs")
-st.subheader("Developed by Gaurav Sablok, Academic Staff Member, Bioinformatics, Universitat Potsdam, Germany")
+st.subheader("Developed by Gaurav Sablok")
 
 components.iframe("https://www.arabidopsis.org/", height=100)
 
